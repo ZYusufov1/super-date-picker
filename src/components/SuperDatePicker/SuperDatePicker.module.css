@@ -1,0 +1,357 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsRow {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: max-content;
+    border-radius: 4px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+.toggleButton {
+    height: 33px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 0;
+    color: #1a1a1a;
+    cursor: pointer;
+    font-size: 12px;
+    width: max-content;
+    text-align: left;
+}
+
+.toggleButton:hover {
+    border: none;
+}
+
+.toggleButton:focus,
+.toggleButton:focus-visible {
+    outline: none;
+}
+
+.dateRangeRow {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dateInputBtn {
+    width: 100%;
+    height: 33px;
+    padding: 8px 12px;
+    border-radius: 0;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 12px;
+}
+
+.dateInputBtn:hover {
+    border: none;
+}
+
+.dateInputBtn:focus,
+.dateInputBtn:focus-visible {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #4ea7f5;
+    outline: none;
+}
+
+.arrow {
+    color: black;
+}
+
+.applyBtn {
+    background: #0070f3;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.applyBtn:hover {
+    background: #0070F38E;
+    border: none;
+}
+
+.applyBtn:focus,
+.applyBtn:focus-visible {
+    outline: none;
+}
+
+.refreshPanel {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.refreshInput {
+    width: 60px;
+    text-align: right;
+}
+
+.refreshToggle {
+    background: #ececec;
+    border: 1px solid #ccc;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+
+.recentlyUsed {
+    margin-top: 12px;
+}
+
+.recentlyUsed h4 {
+    margin: 0 0 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.recentlyUsed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recentlyUsed li {
+    margin-bottom: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*RelativeSelector*/
+
+.popover {
+    position: absolute;
+    top: 35px;
+    background: #1a1b1f;
+    z-index: 10;
+    border: 1px solid #444;
+    padding: 16px;
+    width: 320px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.popover {
+    animation: fadeScaleIn 300ms ease-out;
+}
+
+@keyframes fadeScaleIn {
+    0%   { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1);   }
+}
+
+.quickRow {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/*DatePopover*/
+
+.dateStartPopover, .dateEndPopover {
+    position: absolute;
+    top: 35px;
+    background: #1a1b1f;
+    padding: 16px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: white;
+    width: 320px;
+}
+
+.dateEndPopover {
+    z-index: 10;
+    left: 50px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.activeTab {
+    color: #4ea7f5;
+    border-bottom: 2px solid #4ea7f5;
+}
+
+.timeRow {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selectors {
+    display: flex;
+    gap: 4px;
+    font-size: 22px;
+}
+
+.selectors select {
+    width: 60px;
+    font-size: 20px;
+}
+
+.nowBlock {
+    font-size: 14px;
+}
+
+.relativeRow {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.previewRow {
+    margin: 12px 0;
+}
+
+.roundRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.toggle input {
+    height: max-content;
+    width: max-content;
+}
+
+/*CommonlyUsed*/
+
+.presets {
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.presets button {
+    padding: 6px 10px;
+    background: #e6e6e6;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.commonlyUsed h4 {
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    height: 24px;
+    width: 80px;
+}
+
+
+.commonlyUsed h4 {
+    margin: 6px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.presetsTable {
+    width: 100%;
+}
+
+.presetsTable button {
+    width: 100%;
+    padding: 6px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #4ea7f5;
+    cursor: pointer;
+}
+
+.presetsTable button:hover {
+    text-decoration: underline;
+}
+
+.expressionInputRow {
+    display: flex;
+    height: 35px;
+    width: max-content;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+.expressionInputTitle {
+    width: 37px;
+    height: 23px;
+    padding-top: 6px ;
+    padding-bottom: 6px;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 12px;
+    color: black;
+    background: #ccc;
+}
+
+.expressionInput {
+    height: 23px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    color: black;
+}
+
+.expressionInput:focus,
+.expressionInput:focus-visible {
+    outline: none;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.recentlyUsed button {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 3px 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
